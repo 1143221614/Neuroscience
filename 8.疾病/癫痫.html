@@ -1,192 +1,984 @@
 <!DOCTYPE html>
-<html><head>
-			
-		<title>癫痫</title>
-		<base href="../">
-		<meta id="root-path" root-path="../">
+<html>
 
-		<link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
-		<meta charset="UTF-8">
-		
+<head>
 
-			<link rel="stylesheet" href="lib/styles/obsidian-styles.css">
-			<link rel="stylesheet" href="lib/styles/theme.css">
-			<link rel="stylesheet" href="lib/styles/plugin-styles.css">
-			<link rel="stylesheet" href="lib/styles/snippets.css">
-			<style> body.css-settings-manager { --blur-depth: 9px; --paragraph-spacing: 1; --line-height-main: 1.5; --fancy-hr-icon: '📜'; --h3-size: 1.2125em; --h4-size: 1.1075em; --h2-size: 1.3375em; } body.theme-light.css-settings-manager { --print-h1-color: #000000; } body.theme-dark.css-settings-manager { --print-h1-color: #FFFFFF; --interactive-accent: #8E73D9; --accent-strong: #8E73D9; } </style>
+  <title>癫痫</title>
+  <base href="../">
+  <meta id="root-path" root-path="../">
 
-			
-			<!-- Graph View Data -->
-			<script>
-			let nodes=
-{"nodeCount":27,"linkCount":3,"radii":[7,7,7,7,7,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3],"labels":["未命名","感觉通路","感受器","脊神经","脊髓","目录","抑郁症","帕金森病","神经系统药物治疗","癫痫","睡眠障碍","自主神经系统药物","5.小脑对躯体运动的调节","3.大脑皮层对躯体运动的调节","4.基底核对躯体运动的调节","2.脑干对肌紧张和姿势的调节","1.脊髓对运动和姿势的调控","0.运动与姿势的调控","脑的电活动","睡眠与觉醒","未命名","脑神经","内脏神经","脑干","间脑","小脑","未命名"],"paths":["5.高级功能/学习记忆/未命名.html","3.感觉/感觉通路.html","3.感觉/感受器.html","2.组成/外周神经/脊神经.html","2.组成/中枢神经/脊髓.html","目录.html","8.疾病/精神疾病/抑郁症.html","8.疾病/神经退行性疾病/帕金森病.html","8.疾病/神经系统药物治疗.html","8.疾病/癫痫.html","8.疾病/睡眠障碍.html","6.内脏/自主神经系统药物.html","4.运动/5.小脑对躯体运动的调节.html","4.运动/3.大脑皮层对躯体运动的调节.html","4.运动/4.基底核对躯体运动的调节.html","4.运动/2.脑干对肌紧张和姿势的调节.html","4.运动/1.脊髓对运动和姿势的调控.html","4.运动/0.运动与姿势的调控.html","5.高级功能/脑的电活动.html","5.高级功能/睡眠与觉醒.html","3.感觉/未命名.html","2.组成/外周神经/脑神经.html","2.组成/外周神经/内脏神经.html","2.组成/中枢神经/脑干.html","2.组成/中枢神经/间脑.html","2.组成/中枢神经/小脑.html","1.分子细胞基础/未命名.html"],"linkSources":[2,1,0],"linkTargets":[3,4,3]};
-			let attractionForce = 1;
-			let linkLength = 10;
-			let repulsionForce = 150;
-			let centralForce = 3;
-			let edgePruning = 100;
-			</script>
-			
-<script type="module" src="lib/scripts/graph_view.js"></script>
+  <link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+  <meta charset="UTF-8">
+  <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
 
-<script src="lib/scripts/graph_wasm.js"></script>
+  <link rel="stylesheet" href="lib/styles/obsidian-styles.css">
+  <link rel="stylesheet" href="lib/styles/theme.css">
+  <link rel="stylesheet" href="lib/styles/plugin-styles.css">
+  <link rel="stylesheet" href="lib/styles/snippets.css">
+  <style>
+    body.css-settings-manager {
+      --blur-depth: 9px;
+      --paragraph-spacing: 1;
+      --line-height-main: 1.5;
+      --fancy-hr-icon: '📜';
+      --h3-size: 1.2125em;
+      --h4-size: 1.1075em;
+      --h2-size: 1.3375em;
+    }
 
-<script src="lib/scripts/tinycolor.js"></script>
+    body.theme-light.css-settings-manager {
+      --print-h1-color: #000000;
+    }
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js" integrity="sha512-Ch/O6kL8BqUwAfCF7Ie5SX1Hin+BJgYH4pNjRqXdTEqMsis1TUYg+j6nnI9uduPjGaj7DN4UKCZgpvoExt6dkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    body.theme-dark.css-settings-manager {
+      --print-h1-color: #FFFFFF;
+      --interactive-accent: #8E73D9;
+      --accent-strong: #8E73D9;
+    }
+  </style>
 
-<script src="lib/scripts/webpage.js"></script>
 
-			</head><body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app is-translucent show-inline-title show-view-header css-settings-manager outliner-plugin-dnd color-scheme-options-default background-settings-workplace-theme-light-blue-mountain background-settings-workplace-theme-dark-in-the-sky background-image-settings-markdown-page-transparent background-image-settings-markdown-page-random-default notebook-liked-markdown-page-dotted-notebook-1 toggle-fixed-pattern panel-page-bg-theme-ligt-curve panel-page-bg-theme-dark-sea hide-left-ribbon-retention-drawer layout-style-options-default default-search-bar default-scrollbar view-button-front bt-default-highlight retain-header-color h1-text-align-center h2-toggle-underline h2-text-align-center h3-text-align-start h4-text-align-start h5-text-align-start h6-text-align-start fancy-hr-icon colorful-unordered-list bt-default-unordered-list default-ol-list-marker list-no-border file-shape-default file-name-wrapped unmuted-collapsed-folder remove-file-icons folder-icons remove-arrow folder-style-change-options-colorful-title folder-colorful-custom blockquote-style-default hr-for-pagination all-dark default-table table-style-default image-zoom image-border default-loading-page loading-text-typing-style rainbow-tag setting-style-traditional default-titlebar default-outline-style nowrap-outline stack-tab-text-ori-mixed default-tab default-canvas-background traditional-callout-style style-options-for-admonition-plugin style-options-for-calendar-plugin-default style-options-for-kanban-plugin-static-default style-options-for-kanban-plugin-dynamic-default style-options-for-buttons-plugin dataview-list-style-pacman default-dvtable dialogue-style-default memos-default-light memos-default-dark quiet-outline-optimize code-theme-bt-default whole-code-wrap codebox-default-style is-maximized" style="--zoom-factor:1; --accent-h:267; --accent-s:100%; --accent-l:65%; --font-text-size:22px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;"><div class="webpage-container"><div class="sidebar-left sidebar"><div class="sidebar-content"><div><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle"><div class="toggle-background"></div></label></div><div class="tree-container file-tree mod-nav-indicator" data-depth="0"><div class="tree-header"><span class="sidebar-section-header">Neurosciences</span><button class="clickable-icon collapse-tree-button is-collapsed"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div><div class="tree-scroll-area"><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="1.分子细胞基础"><span class="tree-item-title">1.分子细胞基础</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="1.分子细胞基础/未命名.html"><span class="tree-item-title">未命名</span></a></div><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="2.组成"><span class="tree-item-title">2.组成</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="2.组成/外周神经"><span class="tree-item-title">外周神经</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="2.组成/外周神经/脊神经.html"><span class="tree-item-title">脊神经</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="2.组成/外周神经/脑神经.html"><span class="tree-item-title">脑神经</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="2.组成/外周神经/内脏神经.html"><span class="tree-item-title">内脏神经</span></a></div><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="2.组成/中枢神经"><span class="tree-item-title">中枢神经</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="2.组成/中枢神经/脊髓.html"><span class="tree-item-title">脊髓</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="2.组成/中枢神经/间脑.html"><span class="tree-item-title">间脑</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="2.组成/中枢神经/脑干.html"><span class="tree-item-title">脑干</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="2.组成/中枢神经/小脑.html"><span class="tree-item-title">小脑</span></a></div><div class="tree-item-children"></div></div></div></div></div></div><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="3.感觉"><span class="tree-item-title">3.感觉</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="3.感觉/感觉通路.html"><span class="tree-item-title">感觉通路</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="3.感觉/感受器.html"><span class="tree-item-title">感受器</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="3.感觉/未命名.html"><span class="tree-item-title">未命名</span></a></div><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="4.运动"><span class="tree-item-title">4.运动</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="4.运动/0.运动与姿势的调控.html"><span class="tree-item-title">0.运动与姿势的调控</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="4.运动/1.脊髓对运动和姿势的调控.html"><span class="tree-item-title">1.脊髓对运动和姿势的调控</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="4.运动/2.脑干对肌紧张和姿势的调节.html"><span class="tree-item-title">2.脑干对肌紧张和姿势的调节</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="4.运动/3.大脑皮层对躯体运动的调节.html"><span class="tree-item-title">3.大脑皮层对躯体运动的调节</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="4.运动/4.基底核对躯体运动的调节.html"><span class="tree-item-title">4.基底核对躯体运动的调节</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="4.运动/5.小脑对躯体运动的调节.html"><span class="tree-item-title">5.小脑对躯体运动的调节</span></a></div><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="5.高级功能"><span class="tree-item-title">5.高级功能</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="5.高级功能/学习记忆"><span class="tree-item-title">学习记忆</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="5.高级功能/学习记忆/未命名.html"><span class="tree-item-title">未命名</span></a></div><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="5.高级功能/脑的电活动.html"><span class="tree-item-title">脑的电活动</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="5.高级功能/睡眠与觉醒.html"><span class="tree-item-title">睡眠与觉醒</span></a></div><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="6.内脏"><span class="tree-item-title">6.内脏</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="6.内脏/自主神经系统药物.html"><span class="tree-item-title">自主神经系统药物</span></a></div><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="8.疾病"><span class="tree-item-title">8.疾病</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="8.疾病/精神疾病"><span class="tree-item-title">精神疾病</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="8.疾病/精神疾病/抑郁症.html"><span class="tree-item-title">抑郁症</span></a></div><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="8.疾病/神经退行性疾病"><span class="tree-item-title">神经退行性疾病</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="8.疾病/神经退行性疾病/帕金森病.html"><span class="tree-item-title">帕金森病</span></a></div><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="8.疾病/癫痫.html"><span class="tree-item-title">癫痫</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="8.疾病/神经系统药物治疗.html"><span class="tree-item-title">神经系统药物治疗</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="8.疾病/睡眠障碍.html"><span class="tree-item-title">睡眠障碍</span></a></div><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-tree-file" data-depth="1"><div class="tree-item-contents"><a class="tree-item-link" href="目录.html"><span class="tree-item-title">目录</span></a></div><div class="tree-item-children"></div></div></div></div></div></div><div class="document-container"><div class="markdown-preview-view markdown-rendered node-insert-event allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;"><style id="MJX-CHTML-styles"></style><div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: ; padding-top: var(--file-margins); padding-right: var(--file-margins); padding-left: var(--file-margins); width: 100%; position: absolute;"><div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div><div class="mod-header"></div><div><h2 data-heading="癫痫" id="癫痫" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>癫痫</h2></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div>癫痫是一种反复发作的神经系统疾病，发作时出现脑<strong>局部病灶神经元高频放电</strong>，并向周围扩散导致大脑功能短暂的失调，出现癫痫、惊厥症状伴有运动、感觉和精神异常</li>
-</ul></div><div><h3 data-heading="脑电特点" id="脑电特点" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>脑电特点</h3></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div>局部病灶神经元发生**高频、阵发、同步、爆发式放电</li>
-<li data-line="1"><div class="list-bullet"></div>病灶的异常放电<strong>向周围扩散</strong>，脑组织广泛兴奋</li>
-<li data-line="2"><div class="list-bullet"></div>突发性、阵发性、短暂性、反复性发作</li>
-</ul></div><div><h3 data-heading="发作类型" id="发作类型" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>发作类型</h3></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div>局灶性发作：病灶在皮层脑区，可传递至丘脑继发全面发作</li>
-<li data-line="1"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>全面性发作：病灶在丘脑，广泛激活皮层
-<ul class="has-list-bullet">
-<li data-line="2"><div class="list-bullet"></div>大发作：皮层为主，肌强直-肌阵挛-昏迷</li>
-<li data-line="3"><div class="list-bullet"></div>小发作（失神发作）：丘脑为主，低频同步脑电</li>
-<li data-line="4"><div class="list-bullet"></div>肌阵挛性发作，没有肌强直</li>
-</ul>
-</li>
-</ul></div><div><h3 data-heading="发病机制" id="发病机制" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>发病机制</h3></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div>谷氨酸和GABA失平衡假说</li>
-<li data-line="1"><div class="list-bullet"></div>离子通道假说</li>
-</ul></div><div><h2 data-heading="治疗药物" id="治疗药物" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>治疗药物</h2></div><div><h3 data-heading="作用机制" id="作用机制" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>作用机制</h3></div><div><h4 data-heading="细胞水平：抑制持久高频反复放电" id="细胞水平：抑制持久高频反复放电" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>细胞水平：抑制持久高频反复放电</h4></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>降低神经元静息膜电位抑制动作电位
-<ul class="has-list-bullet">
-<li data-line="1"><div class="list-bullet"></div>调节电压依赖性离子通道</li>
-</ul>
-</li>
-</ul></div><div><h4 data-heading="组织水平：防止异常放电扩散" id="组织水平：防止异常放电扩散" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>组织水平：防止异常放电扩散</h4></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>延缓神经元之间电传导
-<ul class="has-list-bullet">
-<li data-line="1"><div class="list-bullet"></div>调节电压依赖性离子通道</li>
-</ul>
-</li>
-<li data-line="2"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>改善神经元之间化学传导
-<ul class="has-list-bullet">
-<li data-line="3"><div class="list-bullet"></div>削弱谷氨酸介导的兴奋性突触传递功能</li>
-<li data-line="4"><div class="list-bullet"></div>增强GABA介导的抑制性突触传递功能</li>
-</ul>
-</li>
-</ul></div><div><h3 data-heading="药物与临床应用" id="药物与临床应用" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>药物与临床应用</h3></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>主要用于局灶性发作和大发作的药物：抑制皮层椎体神经元
-<ul class="has-list-bullet">
-<li data-line="1"><div class="list-bullet"></div>苯妥英钠（Na 高电压Ca通道）</li>
-<li data-line="2"><div class="list-bullet"></div>拉莫三嗪（Na）</li>
-<li data-line="3"><div class="list-bullet"></div>卡马西平/奥卡西平 （Na）</li>
-<li data-line="4"><div class="list-bullet"></div>左乙拉西坦（谷氨酸）</li>
-</ul>
-</li>
-<li data-line="5"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>主要用于失神发作的药物：抑制丘脑簇状放电
-<ul class="has-list-bullet">
-<li data-line="6"><div class="list-bullet"></div>乙琥胺（<strong>低电压</strong>依赖性Ca）</li>
-</ul>
-</li>
-<li data-line="7"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>广谱抗癫痫药：
-<ul class="has-list-bullet">
-<li data-line="8"><div class="list-bullet"></div>丙戊酸钠（Na Ca 通道、GABA）</li>
-<li data-line="9"><div class="list-bullet"></div>地西泮（苯二氮卓）</li>
-</ul>
-</li>
-<li data-line="10"><div class="list-bullet"></div>孕妇：拉莫三嗪、左乙拉西坦</li>
-</ul></div><div><div data-callout-metadata="" data-callout-fold="" data-callout="hint" class="callout drop-shadow"><div class="callout-title"><div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg></div><div class="callout-title-inner">药物发展</div></div><div class="callout-content">
-<ul class="has-list-bullet">
-<li data-line="1"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>I代-窄谱类抗癫痫药：苯妥英钠、巴比妥类
-<ul class="has-list-bullet">
-<li data-line="2"><div class="list-bullet"></div>拓展临床适应症 提高安全性</li>
-</ul>
-</li>
-<li data-line="3"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>II代-广谱类抗癫痫药：丙戊酸钠、苯二氮卓
-<ul class="has-list-bullet">
-<li data-line="4"><div class="list-bullet"></div>针对发病机制靶点设计药物</li>
-</ul>
-</li>
-<li data-line="5"><div class="list-bullet"></div>III代-靶向治疗药物：拉莫三嗪/奥卡西平、左乙拉西坦</li>
-</ul>
-</div></div></div><div><h3 data-heading="拉莫三嗪阻断癫痫病灶神经元Na通道" id="拉莫三嗪阻断癫痫病灶神经元Na通道" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>拉莫三嗪阻断癫痫病灶神经元Na通道</h3></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div>药物选择性作用于癫痫病变脑区，不影响正常动作电位</li>
-<li data-line="1"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>靶向<strong>静息电位</strong>较高的神经元
-<ul class="has-list-bullet">
-<li data-line="2"><div class="list-bullet"></div>电压依赖性阻滞作用（状态依赖性阻滞作用）</li>
-<li data-line="3"><div class="list-bullet"></div>药物与活化态、失活态Na+通道的亲和力远高于静息态的通道</li>
-</ul>
-</li>
-<li data-line="4"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>靶向<strong>高频</strong>放电神经元
-<ul class="has-list-bullet">
-<li data-line="5"><div class="list-bullet"></div>频率依赖性阻滞作用（用药依赖性阻滞作用）</li>
-<li data-line="6"><div class="list-bullet"></div>药物的结合延缓了通道从失活态到静息态的时间，延长有效不应期</li>
-</ul>
-</li>
-</ul></div><div><h3 data-heading="乙琥胺阻断低电压激活型钙通道" id="乙琥胺阻断低电压激活型钙通道" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>乙琥胺阻断低电压激活型钙通道</h3></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>选择性阻滞丘脑神经元T-型钙离子通道
-<ul class="has-list-bullet">
-<li data-line="1"><div class="list-bullet"></div>T-型钙离子通道：阈电位低，电流持续时间短）</li>
-</ul>
-</li>
-<li data-line="2"><div class="list-bullet"></div>治疗失神发作的首选药</li>
-</ul></div><div><h3 data-heading="丙戊酸钠通过多靶点广谱抗癫痫" id="丙戊酸钠通过多靶点广谱抗癫痫" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>丙戊酸钠通过多靶点广谱抗癫痫</h3></div><div><h4 data-heading="增强GABA系统" id="增强GABA系统" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>增强GABA系统</h4></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div>促进GABA的合成：谷氨酸脱羧酶（GAD）</li>
-<li data-line="1"><div class="list-bullet"></div>抑制GABA的代谢：GABA氨基转移酶（GABA-T）</li>
-<li data-line="2"><div class="list-bullet"></div>抑制GABA的重吸收：GABA转运体（GAT-1）</li>
-<li data-line="3"><div class="list-bullet"></div>增加GABA受体的表达</li>
-<li data-line="4"><div class="list-bullet"></div>增强GABA受体介导的Cl电流</li>
-</ul></div><div><h4 data-heading="抑制离子通道" id="抑制离子通道" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>抑制离子通道</h4></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div>抑制Na通道</li>
-<li data-line="1"><div class="list-bullet"></div>抑制高+低电压Ca通道</li>
-</ul></div><div><h4 data-heading="神经保护" id="神经保护" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>神经保护</h4></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div>抑制琥珀酸半醛还原酶（SSAR）的活性</li>
-<li data-line="1"><div class="list-bullet"></div>减少GABA代谢的毒性产物 <strong>γ-羟基丁酸</strong></li>
-</ul></div><div><h4 data-heading="其它作用" id="其它作用" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>其它作用</h4></div><div><p>抗癫痫、<strong>抗躁狂、镇痛</strong>作用</p></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div>增强5-羟色胺系统功能</li>
-<li data-line="1"><div class="list-bullet"></div>增强多巴胺系统功能</li>
-<li data-line="2"><div class="list-bullet"></div>调节谷氨酸系统功能</li>
-<li data-line="3"><div class="list-bullet"></div>改善神经突触可塑性</li>
-</ul></div><div><h4 data-heading="临床应用特点" id="临床应用特点" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>临床应用特点</h4></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div><strong>广谱</strong>类抗癫痫药</li>
-<li data-line="1"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>剂型选择
-<ul class="has-list-bullet">
-<li data-line="2"><div class="list-bullet"></div>口服剂型：预防性治疗</li>
-<li data-line="3"><div class="list-bullet"></div>静注剂型：癫痫发作治疗</li>
-</ul>
-</li>
-<li data-line="4"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>配伍</strong>用药
-<ul class="has-list-bullet">
-<li data-line="5"><div class="list-bullet"></div>丙戊酸钠抑制肝功，药物代谢受阻，合用需调整剂量</li>
-<li data-line="6"><div class="list-bullet"></div>联合用药增加不良反应风险</li>
-</ul>
-</li>
-</ul></div><div><h3 data-heading="苯二氮卓类药物通过多位点抗癫痫" id="苯二氮卓类药物通过多位点抗癫痫" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>苯二氮卓类药物通过多位点抗癫痫</h3></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div>作用于多个脑区的GABA受体</li>
-<li data-line="1"><div class="list-bullet"></div>地西泮是癫痫持续状态首选药</li>
-</ul></div><div><h3 data-heading="左乙拉西坦作用于谷氨酸系统抗癫痫" id="左乙拉西坦作用于谷氨酸系统抗癫痫" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>左乙拉西坦作用于谷氨酸系统抗癫痫</h3></div><div><h4 data-heading="作用机制独特" id="作用机制独特" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>作用机制独特</h4></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div>抑制突触小泡蛋白2A （Synaptic Vesicle Protein 2A，SV2A）</li>
-<li data-line="1"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>抑制神经递质释放
-<ul class="has-list-bullet">
-<li data-line="2"><div class="list-bullet"></div>倾向于作用至突触小泡循环更频繁的突触</li>
-<li data-line="3"><div class="list-bullet"></div>对亢进的谷氨酸释放选择性更高</li>
-</ul>
-</li>
-</ul></div><div><h4 data-heading="临床特性优质" id="临床特性优质" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>临床特性优质</h4></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>临床最常用的抗癫痫药
-<ul class="has-list-bullet">
-<li data-line="1"><div class="list-bullet"></div>可治疗对苯妥英无效的癫痫</li>
-</ul>
-</li>
-<li data-line="2"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>药物之间相互作用较少，不良反应少
-<ul class="has-list-bullet">
-<li data-line="3"><div class="list-bullet"></div>可用于儿童癫痫治疗</li>
-<li data-line="4"><div class="list-bullet"></div>用药初期无需小剂量开始用药</li>
-</ul>
-</li>
-</ul></div><div class="mod-footer"></div></div></div></div><div class="sidebar-right sidebar"><div class="sidebar-content"><span class="sidebar-section-header">Interactive Graph</span><div class="graph-view-placeholder">
-		<div class="graph-view-container">
-			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-arrow-up-right"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
-			<canvas id="graph-canvas" width="512px" height="512px"></canvas>
-		</div>
-		</div></div></div></div></body></html>
+  <!-- Graph View Data -->
+  <script>
+    let nodes = {
+      "nodeCount": 27,
+      "linkCount": 3,
+      "radii": [7, 7, 7, 7, 7, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+      "labels": ["未命名", "感觉通路", "感受器", "脊神经", "脊髓", "目录", "抑郁症", "帕金森病", "神经系统药物治疗", "癫痫", "睡眠障碍", "自主神经系统药物", "5.小脑对躯体运动的调节", "3.大脑皮层对躯体运动的调节", "4.基底核对躯体运动的调节", "2.脑干对肌紧张和姿势的调节", "1.脊髓对运动和姿势的调控", "0.运动与姿势的调控", "脑的电活动", "睡眠与觉醒", "未命名", "脑神经", "内脏神经", "脑干", "间脑", "小脑", "未命名"],
+      "paths": ["5.高级功能/学习记忆/未命名.html", "3.感觉/感觉通路.html", "3.感觉/感受器.html", "2.组成/外周神经/脊神经.html", "2.组成/中枢神经/脊髓.html", "目录.html", "8.疾病/精神疾病/抑郁症.html", "8.疾病/神经退行性疾病/帕金森病.html", "8.疾病/神经系统药物治疗.html", "8.疾病/癫痫.html", "8.疾病/睡眠障碍.html", "6.内脏/自主神经系统药物.html", "4.运动/5.小脑对躯体运动的调节.html", "4.运动/3.大脑皮层对躯体运动的调节.html", "4.运动/4.基底核对躯体运动的调节.html", "4.运动/2.脑干对肌紧张和姿势的调节.html", "4.运动/1.脊髓对运动和姿势的调控.html", "4.运动/0.运动与姿势的调控.html", "5.高级功能/脑的电活动.html", "5.高级功能/睡眠与觉醒.html", "3.感觉/未命名.html", "2.组成/外周神经/脑神经.html", "2.组成/外周神经/内脏神经.html", "2.组成/中枢神经/脑干.html", "2.组成/中枢神经/间脑.html", "2.组成/中枢神经/小脑.html", "1.分子细胞基础/未命名.html"],
+      "linkSources": [2, 1, 0],
+      "linkTargets": [3, 4, 3]
+    };
+    let attractionForce = 1;
+    let linkLength = 10;
+    let repulsionForce = 150;
+    let centralForce = 3;
+    let edgePruning = 100;
+  </script>
+
+  <script type="module" src="lib/scripts/graph_view.js"></script>
+
+  <script src="lib/scripts/graph_wasm.js"></script>
+
+  <script src="lib/scripts/tinycolor.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js" integrity="sha512-Ch/O6kL8BqUwAfCF7Ie5SX1Hin+BJgYH4pNjRqXdTEqMsis1TUYg+j6nnI9uduPjGaj7DN4UKCZgpvoExt6dkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="lib/scripts/webpage.js"></script>
+
+</head>
+
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app is-translucent show-inline-title show-view-header css-settings-manager outliner-plugin-dnd color-scheme-options-default background-settings-workplace-theme-light-blue-mountain background-settings-workplace-theme-dark-in-the-sky background-image-settings-markdown-page-transparent background-image-settings-markdown-page-random-default notebook-liked-markdown-page-dotted-notebook-1 toggle-fixed-pattern panel-page-bg-theme-ligt-curve panel-page-bg-theme-dark-sea hide-left-ribbon-retention-drawer layout-style-options-default default-search-bar default-scrollbar view-button-front bt-default-highlight retain-header-color h1-text-align-center h2-toggle-underline h2-text-align-center h3-text-align-start h4-text-align-start h5-text-align-start h6-text-align-start fancy-hr-icon colorful-unordered-list bt-default-unordered-list default-ol-list-marker list-no-border file-shape-default file-name-wrapped unmuted-collapsed-folder remove-file-icons folder-icons remove-arrow folder-style-change-options-colorful-title folder-colorful-custom blockquote-style-default hr-for-pagination all-dark default-table table-style-default image-zoom image-border default-loading-page loading-text-typing-style rainbow-tag setting-style-traditional default-titlebar default-outline-style nowrap-outline stack-tab-text-ori-mixed default-tab default-canvas-background traditional-callout-style style-options-for-admonition-plugin style-options-for-calendar-plugin-default style-options-for-kanban-plugin-static-default style-options-for-kanban-plugin-dynamic-default style-options-for-buttons-plugin dataview-list-style-pacman default-dvtable dialogue-style-default memos-default-light memos-default-dark quiet-outline-optimize code-theme-bt-default whole-code-wrap codebox-default-style is-maximized" style="--zoom-factor:1; --accent-h:267; --accent-s:100%; --accent-l:65%; --font-text-size:22px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
+  <div class="webpage-container">
+    <div class="sidebar-left sidebar">
+      <div class="sidebar-content">
+        <div><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle">
+            <div class="toggle-background"></div>
+          </label></div>
+        <div class="tree-container file-tree mod-nav-indicator" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">Neurosciences</span><button class="clickable-icon collapse-tree-button is-collapsed"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="1.分子细胞基础"><span class="tree-item-title">1.分子细胞基础</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="1.分子细胞基础/未命名.html"><span class="tree-item-title">未命名</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="2.组成"><span class="tree-item-title">2.组成</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="2.组成/外周神经"><span class="tree-item-title">外周神经</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="2.组成/外周神经/脊神经.html"><span class="tree-item-title">脊神经</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="2.组成/外周神经/脑神经.html"><span class="tree-item-title">脑神经</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="2.组成/外周神经/内脏神经.html"><span class="tree-item-title">内脏神经</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="2.组成/中枢神经"><span class="tree-item-title">中枢神经</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="2.组成/中枢神经/脊髓.html"><span class="tree-item-title">脊髓</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="2.组成/中枢神经/间脑.html"><span class="tree-item-title">间脑</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="2.组成/中枢神经/脑干.html"><span class="tree-item-title">脑干</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="2.组成/中枢神经/小脑.html"><span class="tree-item-title">小脑</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="3.感觉"><span class="tree-item-title">3.感觉</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="3.感觉/感觉通路.html"><span class="tree-item-title">感觉通路</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="3.感觉/感受器.html"><span class="tree-item-title">感受器</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="3.感觉/未命名.html"><span class="tree-item-title">未命名</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="4.运动"><span class="tree-item-title">4.运动</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="4.运动/0.运动与姿势的调控.html"><span class="tree-item-title">0.运动与姿势的调控</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="4.运动/1.脊髓对运动和姿势的调控.html"><span class="tree-item-title">1.脊髓对运动和姿势的调控</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="4.运动/2.脑干对肌紧张和姿势的调节.html"><span class="tree-item-title">2.脑干对肌紧张和姿势的调节</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="4.运动/3.大脑皮层对躯体运动的调节.html"><span class="tree-item-title">3.大脑皮层对躯体运动的调节</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="4.运动/4.基底核对躯体运动的调节.html"><span class="tree-item-title">4.基底核对躯体运动的调节</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="4.运动/5.小脑对躯体运动的调节.html"><span class="tree-item-title">5.小脑对躯体运动的调节</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="5.高级功能"><span class="tree-item-title">5.高级功能</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="5.高级功能/学习记忆"><span class="tree-item-title">学习记忆</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="5.高级功能/学习记忆/未命名.html"><span class="tree-item-title">未命名</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="5.高级功能/脑的电活动.html"><span class="tree-item-title">脑的电活动</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="5.高级功能/睡眠与觉醒.html"><span class="tree-item-title">睡眠与觉醒</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="6.内脏"><span class="tree-item-title">6.内脏</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="6.内脏/自主神经系统药物.html"><span class="tree-item-title">自主神经系统药物</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="8.疾病"><span class="tree-item-title">8.疾病</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="8.疾病/精神疾病"><span class="tree-item-title">精神疾病</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="8.疾病/精神疾病/抑郁症.html"><span class="tree-item-title">抑郁症</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="8.疾病/神经退行性疾病"><span class="tree-item-title">神经退行性疾病</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="8.疾病/神经退行性疾病/帕金森病.html"><span class="tree-item-title">帕金森病</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="8.疾病/癫痫.html"><span class="tree-item-title">癫痫</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="8.疾病/神经系统药物治疗.html"><span class="tree-item-title">神经系统药物治疗</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="8.疾病/睡眠障碍.html"><span class="tree-item-title">睡眠障碍</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-file" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="目录.html"><span class="tree-item-title">目录</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="document-container">
+      <div class="markdown-preview-view markdown-rendered node-insert-event allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
+        <style id="MJX-CHTML-styles"></style>
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: ; padding-top: var(--file-margins); padding-right: var(--file-margins); padding-left: var(--file-margins); width: 100%; position: absolute;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header"></div>
+          <div>
+            <h2 data-heading="癫痫" id="癫痫" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>癫痫
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>癫痫是一种反复发作的神经系统疾病，发作时出现脑<strong>局部病灶神经元高频放电</strong>，并向周围扩散导致大脑功能短暂的失调，出现癫痫、惊厥症状伴有运动、感觉和精神异常
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-heading="脑电特点" id="脑电特点" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>脑电特点
+            </h3>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>局部病灶神经元发生**高频、阵发、同步、爆发式放电
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>病灶的异常放电<strong>向周围扩散</strong>，脑组织广泛兴奋
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>突发性、阵发性、短暂性、反复性发作
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-heading="发作类型" id="发作类型" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>发作类型
+            </h3>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>局灶性发作：病灶在皮层脑区，可传递至丘脑继发全面发作
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>全面性发作：病灶在丘脑，广泛激活皮层
+                <ul class="has-list-bullet">
+                  <li data-line="2">
+                    <div class="list-bullet"></div>大发作：皮层为主，肌强直-肌阵挛-昏迷
+                  </li>
+                  <li data-line="3">
+                    <div class="list-bullet"></div>小发作（失神发作）：丘脑为主，低频同步脑电
+                  </li>
+                  <li data-line="4">
+                    <div class="list-bullet"></div>肌阵挛性发作，没有肌强直
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-heading="发病机制" id="发病机制" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>发病机制
+            </h3>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>谷氨酸和GABA失平衡假说
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>离子通道假说
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="治疗药物" id="治疗药物" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>治疗药物
+            </h2>
+          </div>
+          <div>
+            <h3 data-heading="作用机制" id="作用机制" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>作用机制
+            </h3>
+          </div>
+          <div>
+            <h4 data-heading="细胞水平：抑制持久高频反复放电" id="细胞水平：抑制持久高频反复放电" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>细胞水平：抑制持久高频反复放电
+            </h4>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>降低神经元静息膜电位抑制动作电位
+                <ul class="has-list-bullet">
+                  <li data-line="1">
+                    <div class="list-bullet"></div>调节电压依赖性离子通道
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-heading="组织水平：防止异常放电扩散" id="组织水平：防止异常放电扩散" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>组织水平：防止异常放电扩散
+            </h4>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>延缓神经元之间电传导
+                <ul class="has-list-bullet">
+                  <li data-line="1">
+                    <div class="list-bullet"></div>调节电压依赖性离子通道
+                  </li>
+                </ul>
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>改善神经元之间化学传导
+                <ul class="has-list-bullet">
+                  <li data-line="3">
+                    <div class="list-bullet"></div>削弱谷氨酸介导的兴奋性突触传递功能
+                  </li>
+                  <li data-line="4">
+                    <div class="list-bullet"></div>增强GABA介导的抑制性突触传递功能
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-heading="药物与临床应用" id="药物与临床应用" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>药物与临床应用
+            </h3>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>主要用于局灶性发作和大发作的药物：抑制皮层椎体神经元
+                <ul class="has-list-bullet">
+                  <li data-line="1">
+                    <div class="list-bullet"></div>苯妥英钠（Na 高电压Ca通道）
+                  </li>
+                  <li data-line="2">
+                    <div class="list-bullet"></div>拉莫三嗪（Na）
+                  </li>
+                  <li data-line="3">
+                    <div class="list-bullet"></div>卡马西平/奥卡西平 （Na）
+                  </li>
+                  <li data-line="4">
+                    <div class="list-bullet"></div>左乙拉西坦（谷氨酸）
+                  </li>
+                </ul>
+              </li>
+              <li data-line="5">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>主要用于失神发作的药物：抑制丘脑簇状放电
+                <ul class="has-list-bullet">
+                  <li data-line="6">
+                    <div class="list-bullet"></div>乙琥胺（<strong>低电压</strong>依赖性Ca）
+                  </li>
+                </ul>
+              </li>
+              <li data-line="7">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>广谱抗癫痫药：
+                <ul class="has-list-bullet">
+                  <li data-line="8">
+                    <div class="list-bullet"></div>丙戊酸钠（Na Ca 通道、GABA）
+                  </li>
+                  <li data-line="9">
+                    <div class="list-bullet"></div>地西泮（苯二氮卓）
+                  </li>
+                </ul>
+              </li>
+              <li data-line="10">
+                <div class="list-bullet"></div>孕妇：拉莫三嗪、左乙拉西坦
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div data-callout-metadata="" data-callout-fold="" data-callout="hint" class="callout drop-shadow">
+              <div class="callout-title">
+                <div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-flame">
+                    <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
+                  </svg></div>
+                <div class="callout-title-inner">药物发展</div>
+              </div>
+              <div class="callout-content">
+                <ul class="has-list-bullet">
+                  <li data-line="1">
+                    <div class="list-bullet"></div>
+                    <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div>I代-窄谱类抗癫痫药：苯妥英钠、巴比妥类
+                    <ul class="has-list-bullet">
+                      <li data-line="2">
+                        <div class="list-bullet"></div>拓展临床适应症 提高安全性
+                      </li>
+                    </ul>
+                  </li>
+                  <li data-line="3">
+                    <div class="list-bullet"></div>
+                    <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div>II代-广谱类抗癫痫药：丙戊酸钠、苯二氮卓
+                    <ul class="has-list-bullet">
+                      <li data-line="4">
+                        <div class="list-bullet"></div>针对发病机制靶点设计药物
+                      </li>
+                    </ul>
+                  </li>
+                  <li data-line="5">
+                    <div class="list-bullet"></div>III代-靶向治疗药物：拉莫三嗪/奥卡西平、左乙拉西坦
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 data-heading="拉莫三嗪阻断癫痫病灶神经元Na通道" id="拉莫三嗪阻断癫痫病灶神经元Na通道" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>拉莫三嗪阻断癫痫病灶神经元Na通道
+            </h3>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>药物选择性作用于癫痫病变脑区，不影响正常动作电位
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>靶向<strong>静息电位</strong>较高的神经元
+                <ul class="has-list-bullet">
+                  <li data-line="2">
+                    <div class="list-bullet"></div>电压依赖性阻滞作用（状态依赖性阻滞作用）
+                  </li>
+                  <li data-line="3">
+                    <div class="list-bullet"></div>药物与活化态、失活态Na+通道的亲和力远高于静息态的通道
+                  </li>
+                </ul>
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>靶向<strong>高频</strong>放电神经元
+                <ul class="has-list-bullet">
+                  <li data-line="5">
+                    <div class="list-bullet"></div>频率依赖性阻滞作用（用药依赖性阻滞作用）
+                  </li>
+                  <li data-line="6">
+                    <div class="list-bullet"></div>药物的结合延缓了通道从失活态到静息态的时间，延长有效不应期
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-heading="乙琥胺阻断低电压激活型钙通道" id="乙琥胺阻断低电压激活型钙通道" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>乙琥胺阻断低电压激活型钙通道
+            </h3>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>选择性阻滞丘脑神经元T-型钙离子通道
+                <ul class="has-list-bullet">
+                  <li data-line="1">
+                    <div class="list-bullet"></div>T-型钙离子通道：阈电位低，电流持续时间短）
+                  </li>
+                </ul>
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>治疗失神发作的首选药
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-heading="丙戊酸钠通过多靶点广谱抗癫痫" id="丙戊酸钠通过多靶点广谱抗癫痫" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>丙戊酸钠通过多靶点广谱抗癫痫
+            </h3>
+          </div>
+          <div>
+            <h4 data-heading="增强GABA系统" id="增强GABA系统" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>增强GABA系统
+            </h4>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>促进GABA的合成：谷氨酸脱羧酶（GAD）
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>抑制GABA的代谢：GABA氨基转移酶（GABA-T）
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>抑制GABA的重吸收：GABA转运体（GAT-1）
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>增加GABA受体的表达
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div>增强GABA受体介导的Cl电流
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-heading="抑制离子通道" id="抑制离子通道" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>抑制离子通道
+            </h4>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>抑制Na通道
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>抑制高+低电压Ca通道
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-heading="神经保护" id="神经保护" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>神经保护
+            </h4>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>抑制琥珀酸半醛还原酶（SSAR）的活性
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>减少GABA代谢的毒性产物 <strong>γ-羟基丁酸</strong>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-heading="其它作用" id="其它作用" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>其它作用
+            </h4>
+          </div>
+          <div>
+            <p>抗癫痫、<strong>抗躁狂、镇痛</strong>作用</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>增强5-羟色胺系统功能
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>增强多巴胺系统功能
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>调节谷氨酸系统功能
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>改善神经突触可塑性
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-heading="临床应用特点" id="临床应用特点" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>临床应用特点
+            </h4>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div><strong>广谱</strong>类抗癫痫药
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>剂型选择
+                <ul class="has-list-bullet">
+                  <li data-line="2">
+                    <div class="list-bullet"></div>口服剂型：预防性治疗
+                  </li>
+                  <li data-line="3">
+                    <div class="list-bullet"></div>静注剂型：癫痫发作治疗
+                  </li>
+                </ul>
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><strong>配伍</strong>用药
+                <ul class="has-list-bullet">
+                  <li data-line="5">
+                    <div class="list-bullet"></div>丙戊酸钠抑制肝功，药物代谢受阻，合用需调整剂量
+                  </li>
+                  <li data-line="6">
+                    <div class="list-bullet"></div>联合用药增加不良反应风险
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-heading="苯二氮卓类药物通过多位点抗癫痫" id="苯二氮卓类药物通过多位点抗癫痫" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>苯二氮卓类药物通过多位点抗癫痫
+            </h3>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>作用于多个脑区的GABA受体
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>地西泮是癫痫持续状态首选药
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-heading="左乙拉西坦作用于谷氨酸系统抗癫痫" id="左乙拉西坦作用于谷氨酸系统抗癫痫" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>左乙拉西坦作用于谷氨酸系统抗癫痫
+            </h3>
+          </div>
+          <div>
+            <h4 data-heading="作用机制独特" id="作用机制独特" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>作用机制独特
+            </h4>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>抑制突触小泡蛋白2A （Synaptic Vesicle Protein 2A，SV2A）
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>抑制神经递质释放
+                <ul class="has-list-bullet">
+                  <li data-line="2">
+                    <div class="list-bullet"></div>倾向于作用至突触小泡循环更频繁的突触
+                  </li>
+                  <li data-line="3">
+                    <div class="list-bullet"></div>对亢进的谷氨酸释放选择性更高
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-heading="临床特性优质" id="临床特性优质" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>临床特性优质
+            </h4>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>临床最常用的抗癫痫药
+                <ul class="has-list-bullet">
+                  <li data-line="1">
+                    <div class="list-bullet"></div>可治疗对苯妥英无效的癫痫
+                  </li>
+                </ul>
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>药物之间相互作用较少，不良反应少
+                <ul class="has-list-bullet">
+                  <li data-line="3">
+                    <div class="list-bullet"></div>可用于儿童癫痫治疗
+                  </li>
+                  <li data-line="4">
+                    <div class="list-bullet"></div>用药初期无需小剂量开始用药
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="mod-footer"></div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-right sidebar">
+      <div class="sidebar-content"><span class="sidebar-section-header">Interactive Graph</span>
+        <div class="graph-view-placeholder">
+          <div class="graph-view-container">
+            <div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-arrow-up-right">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg></div>
+            <canvas id="graph-canvas" width="512px" height="512px"></canvas>
+          </div>
+        </div>
+        <div class="tree-container outline-tree" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-heading mod-collapsible" data-depth="2">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="#癫痫"><span class="tree-item-title">癫痫</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading" data-depth="3">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#脑电特点"><span class="tree-item-title">脑电特点</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="3">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#发作类型"><span class="tree-item-title">发作类型</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="3">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#发病机制"><span class="tree-item-title">发病机制</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-heading mod-collapsible" data-depth="2">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="#治疗药物"><span class="tree-item-title">治疗药物</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading mod-collapsible" data-depth="3">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="#作用机制"><span class="tree-item-title">作用机制</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-heading" data-depth="4">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#细胞水平：抑制持久高频反复放电"><span class="tree-item-title">细胞水平：抑制持久高频反复放电</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="4">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#组织水平：防止异常放电扩散"><span class="tree-item-title">组织水平：防止异常放电扩散</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="3">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#药物与临床应用"><span class="tree-item-title">药物与临床应用</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="3">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#拉莫三嗪阻断癫痫病灶神经元Na通道"><span class="tree-item-title">拉莫三嗪阻断癫痫病灶神经元Na通道</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="3">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#乙琥胺阻断低电压激活型钙通道"><span class="tree-item-title">乙琥胺阻断低电压激活型钙通道</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading mod-collapsible" data-depth="3">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="#丙戊酸钠通过多靶点广谱抗癫痫"><span class="tree-item-title">丙戊酸钠通过多靶点广谱抗癫痫</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-heading" data-depth="4">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#增强GABA系统"><span class="tree-item-title">增强GABA系统</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="4">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#抑制离子通道"><span class="tree-item-title">抑制离子通道</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="4">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#神经保护"><span class="tree-item-title">神经保护</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="4">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#其它作用"><span class="tree-item-title">其它作用</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="4">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#临床应用特点"><span class="tree-item-title">临床应用特点</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="3">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#苯二氮卓类药物通过多位点抗癫痫"><span class="tree-item-title">苯二氮卓类药物通过多位点抗癫痫</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading mod-collapsible" data-depth="3">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="#左乙拉西坦作用于谷氨酸系统抗癫痫"><span class="tree-item-title">左乙拉西坦作用于谷氨酸系统抗癫痫</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-heading" data-depth="4">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#作用机制独特"><span class="tree-item-title">作用机制独特</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="4">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#临床特性优质"><span class="tree-item-title">临床特性优质</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

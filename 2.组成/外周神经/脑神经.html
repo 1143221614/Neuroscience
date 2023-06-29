@@ -1,303 +1,890 @@
 <!DOCTYPE html>
-<html><head>
-			
-		<title>脑神经</title>
-		<base href="../../">
-		<meta id="root-path" root-path="../../">
+<html>
 
-		<link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
-		<meta charset="UTF-8">
-		
+<head>
 
-			<link rel="stylesheet" href="lib/styles/obsidian-styles.css">
-			<link rel="stylesheet" href="lib/styles/theme.css">
-			<link rel="stylesheet" href="lib/styles/plugin-styles.css">
-			<link rel="stylesheet" href="lib/styles/snippets.css">
-			<style> body.css-settings-manager { --blur-depth: 9px; --paragraph-spacing: 1; --line-height-main: 1.5; --fancy-hr-icon: '📜'; --h3-size: 1.2125em; --h4-size: 1.1075em; --h2-size: 1.3375em; } body.theme-light.css-settings-manager { --print-h1-color: #000000; } body.theme-dark.css-settings-manager { --print-h1-color: #FFFFFF; --interactive-accent: #8E73D9; --accent-strong: #8E73D9; } </style>
+  <title>脑神经</title>
+  <base href="../../">
+  <meta id="root-path" root-path="../../">
 
-			
-			<!-- Graph View Data -->
-			<script>
-			let nodes=
-{"nodeCount":27,"linkCount":3,"radii":[7,7,7,7,7,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3],"labels":["未命名","感觉通路","感受器","脊神经","脊髓","目录","抑郁症","帕金森病","神经系统药物治疗","癫痫","睡眠障碍","自主神经系统药物","5.小脑对躯体运动的调节","3.大脑皮层对躯体运动的调节","4.基底核对躯体运动的调节","2.脑干对肌紧张和姿势的调节","1.脊髓对运动和姿势的调控","0.运动与姿势的调控","脑的电活动","睡眠与觉醒","未命名","脑神经","内脏神经","脑干","间脑","小脑","未命名"],"paths":["5.高级功能/学习记忆/未命名.html","3.感觉/感觉通路.html","3.感觉/感受器.html","2.组成/外周神经/脊神经.html","2.组成/中枢神经/脊髓.html","目录.html","8.疾病/精神疾病/抑郁症.html","8.疾病/神经退行性疾病/帕金森病.html","8.疾病/神经系统药物治疗.html","8.疾病/癫痫.html","8.疾病/睡眠障碍.html","6.内脏/自主神经系统药物.html","4.运动/5.小脑对躯体运动的调节.html","4.运动/3.大脑皮层对躯体运动的调节.html","4.运动/4.基底核对躯体运动的调节.html","4.运动/2.脑干对肌紧张和姿势的调节.html","4.运动/1.脊髓对运动和姿势的调控.html","4.运动/0.运动与姿势的调控.html","5.高级功能/脑的电活动.html","5.高级功能/睡眠与觉醒.html","3.感觉/未命名.html","2.组成/外周神经/脑神经.html","2.组成/外周神经/内脏神经.html","2.组成/中枢神经/脑干.html","2.组成/中枢神经/间脑.html","2.组成/中枢神经/小脑.html","1.分子细胞基础/未命名.html"],"linkSources":[2,1,0],"linkTargets":[3,4,3]};
-			let attractionForce = 1;
-			let linkLength = 10;
-			let repulsionForce = 150;
-			let centralForce = 3;
-			let edgePruning = 100;
-			</script>
-			
-<script type="module" src="lib/scripts/graph_view.js"></script>
+  <link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+  <meta charset="UTF-8">
+  <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
 
-<script src="lib/scripts/graph_wasm.js"></script>
+  <link rel="stylesheet" href="lib/styles/obsidian-styles.css">
+  <link rel="stylesheet" href="lib/styles/theme.css">
+  <link rel="stylesheet" href="lib/styles/plugin-styles.css">
+  <link rel="stylesheet" href="lib/styles/snippets.css">
+  <style>
+    body.css-settings-manager {
+      --blur-depth: 9px;
+      --paragraph-spacing: 1;
+      --line-height-main: 1.5;
+      --fancy-hr-icon: '📜';
+      --h3-size: 1.2125em;
+      --h4-size: 1.1075em;
+      --h2-size: 1.3375em;
+    }
 
-<script src="lib/scripts/tinycolor.js"></script>
+    body.theme-light.css-settings-manager {
+      --print-h1-color: #000000;
+    }
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js" integrity="sha512-Ch/O6kL8BqUwAfCF7Ie5SX1Hin+BJgYH4pNjRqXdTEqMsis1TUYg+j6nnI9uduPjGaj7DN4UKCZgpvoExt6dkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    body.theme-dark.css-settings-manager {
+      --print-h1-color: #FFFFFF;
+      --interactive-accent: #8E73D9;
+      --accent-strong: #8E73D9;
+    }
+  </style>
 
-<script src="lib/scripts/webpage.js"></script>
 
-			</head><body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app is-translucent show-inline-title show-view-header css-settings-manager outliner-plugin-dnd color-scheme-options-default background-settings-workplace-theme-light-blue-mountain background-settings-workplace-theme-dark-in-the-sky background-image-settings-markdown-page-transparent background-image-settings-markdown-page-random-default notebook-liked-markdown-page-dotted-notebook-1 toggle-fixed-pattern panel-page-bg-theme-ligt-curve panel-page-bg-theme-dark-sea hide-left-ribbon-retention-drawer layout-style-options-default default-search-bar default-scrollbar view-button-front bt-default-highlight retain-header-color h1-text-align-center h2-toggle-underline h2-text-align-center h3-text-align-start h4-text-align-start h5-text-align-start h6-text-align-start fancy-hr-icon colorful-unordered-list bt-default-unordered-list default-ol-list-marker list-no-border file-shape-default file-name-wrapped unmuted-collapsed-folder remove-file-icons folder-icons remove-arrow folder-style-change-options-colorful-title folder-colorful-custom blockquote-style-default hr-for-pagination all-dark default-table table-style-default image-zoom image-border default-loading-page loading-text-typing-style rainbow-tag setting-style-traditional default-titlebar default-outline-style nowrap-outline stack-tab-text-ori-mixed default-tab default-canvas-background traditional-callout-style style-options-for-admonition-plugin style-options-for-calendar-plugin-default style-options-for-kanban-plugin-static-default style-options-for-kanban-plugin-dynamic-default style-options-for-buttons-plugin dataview-list-style-pacman default-dvtable dialogue-style-default memos-default-light memos-default-dark quiet-outline-optimize code-theme-bt-default whole-code-wrap codebox-default-style is-maximized" style="--zoom-factor:1; --accent-h:267; --accent-s:100%; --accent-l:65%; --font-text-size:22px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;"><div class="webpage-container"><div class="sidebar-left sidebar"><div class="sidebar-content"><div><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle"><div class="toggle-background"></div></label></div><div class="tree-container file-tree mod-nav-indicator" data-depth="0"><div class="tree-header"><span class="sidebar-section-header">Neurosciences</span><button class="clickable-icon collapse-tree-button is-collapsed"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div><div class="tree-scroll-area"><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="1.分子细胞基础"><span class="tree-item-title">1.分子细胞基础</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="1.分子细胞基础/未命名.html"><span class="tree-item-title">未命名</span></a></div><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="2.组成"><span class="tree-item-title">2.组成</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="2.组成/外周神经"><span class="tree-item-title">外周神经</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="2.组成/外周神经/脊神经.html"><span class="tree-item-title">脊神经</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="2.组成/外周神经/脑神经.html"><span class="tree-item-title">脑神经</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="2.组成/外周神经/内脏神经.html"><span class="tree-item-title">内脏神经</span></a></div><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="2.组成/中枢神经"><span class="tree-item-title">中枢神经</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="2.组成/中枢神经/脊髓.html"><span class="tree-item-title">脊髓</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="2.组成/中枢神经/间脑.html"><span class="tree-item-title">间脑</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="2.组成/中枢神经/脑干.html"><span class="tree-item-title">脑干</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="2.组成/中枢神经/小脑.html"><span class="tree-item-title">小脑</span></a></div><div class="tree-item-children"></div></div></div></div></div></div><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="3.感觉"><span class="tree-item-title">3.感觉</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="3.感觉/感觉通路.html"><span class="tree-item-title">感觉通路</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="3.感觉/感受器.html"><span class="tree-item-title">感受器</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="3.感觉/未命名.html"><span class="tree-item-title">未命名</span></a></div><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="4.运动"><span class="tree-item-title">4.运动</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="4.运动/0.运动与姿势的调控.html"><span class="tree-item-title">0.运动与姿势的调控</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="4.运动/1.脊髓对运动和姿势的调控.html"><span class="tree-item-title">1.脊髓对运动和姿势的调控</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="4.运动/2.脑干对肌紧张和姿势的调节.html"><span class="tree-item-title">2.脑干对肌紧张和姿势的调节</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="4.运动/3.大脑皮层对躯体运动的调节.html"><span class="tree-item-title">3.大脑皮层对躯体运动的调节</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="4.运动/4.基底核对躯体运动的调节.html"><span class="tree-item-title">4.基底核对躯体运动的调节</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="4.运动/5.小脑对躯体运动的调节.html"><span class="tree-item-title">5.小脑对躯体运动的调节</span></a></div><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="5.高级功能"><span class="tree-item-title">5.高级功能</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="5.高级功能/学习记忆"><span class="tree-item-title">学习记忆</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="5.高级功能/学习记忆/未命名.html"><span class="tree-item-title">未命名</span></a></div><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="5.高级功能/脑的电活动.html"><span class="tree-item-title">脑的电活动</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="5.高级功能/睡眠与觉醒.html"><span class="tree-item-title">睡眠与觉醒</span></a></div><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="6.内脏"><span class="tree-item-title">6.内脏</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="6.内脏/自主神经系统药物.html"><span class="tree-item-title">自主神经系统药物</span></a></div><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="8.疾病"><span class="tree-item-title">8.疾病</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="8.疾病/精神疾病"><span class="tree-item-title">精神疾病</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="8.疾病/精神疾病/抑郁症.html"><span class="tree-item-title">抑郁症</span></a></div><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="8.疾病/神经退行性疾病"><span class="tree-item-title">神经退行性疾病</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="8.疾病/神经退行性疾病/帕金森病.html"><span class="tree-item-title">帕金森病</span></a></div><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="8.疾病/癫痫.html"><span class="tree-item-title">癫痫</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="8.疾病/神经系统药物治疗.html"><span class="tree-item-title">神经系统药物治疗</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="8.疾病/睡眠障碍.html"><span class="tree-item-title">睡眠障碍</span></a></div><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-tree-file" data-depth="1"><div class="tree-item-contents"><a class="tree-item-link" href="目录.html"><span class="tree-item-title">目录</span></a></div><div class="tree-item-children"></div></div></div></div></div></div><div class="document-container"><div class="markdown-preview-view markdown-rendered node-insert-event allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;"><style id="MJX-CHTML-styles"></style><div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: ; padding-top: var(--file-margins); padding-right: var(--file-margins); padding-left: var(--file-margins); width: 100%; position: absolute;"><div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div><div class="mod-header"></div><div><h2 data-heading="脑神经" id="脑神经" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>脑神经</h2></div><div><h3 data-heading="位置走行" id="位置走行" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>位置走行</h3></div><div style="overflow-x: auto;"><table>
-<thead>
-<tr>
-<th style="text-align:center"></th>
-<th style="text-align:center">脑神经</th>
-<th style="text-align:center">与脑的联系</th>
-<th style="text-align:center">出/入颅部位</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">1</td>
-<td style="text-align:center">嗅神经</td>
-<td style="text-align:center">端脑 嗅球</td>
-<td style="text-align:center">筛板</td>
-</tr>
-<tr>
-<td style="text-align:center">2</td>
-<td style="text-align:center">视神经</td>
-<td style="text-align:center">间脑 视交叉</td>
-<td style="text-align:center">视神经管</td>
-</tr>
-<tr>
-<td style="text-align:center">3</td>
-<td style="text-align:center">动眼神经</td>
-<td style="text-align:center">中脑 脑脚窝</td>
-<td style="text-align:center">眶上裂</td>
-</tr>
-<tr>
-<td style="text-align:center">4</td>
-<td style="text-align:center">滑车神经</td>
-<td style="text-align:center">下丘下方</td>
-<td style="text-align:center">眶上裂</td>
-</tr>
-<tr>
-<td style="text-align:center">5</td>
-<td style="text-align:center">三叉神经</td>
-<td style="text-align:center">脑桥 基底部</td>
-<td style="text-align:center">圆孔、卵圆孔、眶上裂</td>
-</tr>
-<tr>
-<td style="text-align:center">6</td>
-<td style="text-align:center">展神经</td>
-<td style="text-align:center" rowspan="3">脑桥 延髓脑桥沟</td>
-<td style="text-align:center">眶上裂</td>
-</tr>
-<tr>
-<td style="text-align:center">7</td>
-<td style="text-align:center">面神经</td>
-<td style="text-align:center">内耳门、茎乳孔</td>
-</tr>
-<tr>
-<td style="text-align:center">8</td>
-<td style="text-align:center">前庭蜗神经</td>
-<td style="text-align:center">内耳门</td>
-</tr>
-<tr>
-<td style="text-align:center">9</td>
-<td style="text-align:center">舌咽神经</td>
-<td style="text-align:center" rowspan="3">延髓 橄榄后沟</td>
-<td style="text-align:center" rowspan="3">颈静脉孔</td>
-</tr>
-<tr>
-<td style="text-align:center">10</td>
-<td style="text-align:center">迷走神经</td>
-</tr>
-<tr>
-<td style="text-align:center">11</td>
-<td style="text-align:center">副神经</td>
-</tr>
-<tr>
-<td style="text-align:center">12</td>
-<td style="text-align:center">舌下神经</td>
-<td style="text-align:center">延髓 橄榄前方</td>
-<td style="text-align:center">舌下神经管</td>
-</tr>
-</tbody>
-</table>
-</div><div><h3 data-heading="纤维成分" id="纤维成分" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>纤维成分</h3></div><div><h4 data-heading="纤维成分类型" id="纤维成分类型" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>纤维成分类型</h4></div><div style="overflow-x: auto;"><table>
-<thead>
-<tr>
-<th style="text-align:center">纤维成分</th>
-<th style="text-align:center">效应器</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">一般躯体运动</td>
-<td style="text-align:center">骨骼肌（舌肌、眼球外肌）</td>
-</tr>
-<tr>
-<td style="text-align:center">一般内脏运动</td>
-<td style="text-align:center">平滑肌、心肌、纤体</td>
-</tr>
-<tr>
-<td style="text-align:center">特殊内脏运动</td>
-<td style="text-align:center">表情肌、咀嚼肌、咽喉肌、胸锁乳突肌和斜方肌</td>
-</tr>
-<tr>
-<td style="text-align:center">一般躯体感觉</td>
-<td style="text-align:center">皮肤、肌、肌腱、口鼻部粘膜</td>
-</tr>
-<tr>
-<td style="text-align:center">特殊躯体感觉</td>
-<td style="text-align:center">视器、位听器</td>
-</tr>
-<tr>
-<td style="text-align:center">一般内脏感觉</td>
-<td style="text-align:center">内脏、心血管</td>
-</tr>
-<tr>
-<td style="text-align:center">特殊内脏感觉</td>
-<td style="text-align:center">味蕾、嗅器</td>
-</tr>
-</tbody>
-</table>
-</div><div><h4 data-heading="脑神经的纤维成分" id="脑神经的纤维成分" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>脑神经的纤维成分</h4></div><div style="overflow-x: auto;"><table>
-<thead>
-<tr>
-<th style="text-align:center"></th>
-<th style="text-align:center">脑神经</th>
-<th style="text-align:center">纤维成分</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">1</td>
-<td style="text-align:center">嗅神经</td>
-<td style="text-align:center">特殊内脏感觉</td>
-</tr>
-<tr>
-<td style="text-align:center">2</td>
-<td style="text-align:center">视神经</td>
-<td style="text-align:center">特殊躯体感觉</td>
-</tr>
-<tr>
-<td style="text-align:center">3</td>
-<td style="text-align:center">动眼神经</td>
-<td style="text-align:center">一般躯体运动、一般内脏运动</td>
-</tr>
-<tr>
-<td style="text-align:center">4</td>
-<td style="text-align:center">滑车神经</td>
-<td style="text-align:center">一般躯体运动</td>
-</tr>
-<tr>
-<td style="text-align:center">5</td>
-<td style="text-align:center">三叉神经</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">6</td>
-<td style="text-align:center">展神经</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">7</td>
-<td style="text-align:center">面神经</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">8</td>
-<td style="text-align:center">前庭蜗神经</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">9</td>
-<td style="text-align:center">舌咽神经</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">10</td>
-<td style="text-align:center">迷走神经</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">11</td>
-<td style="text-align:center">副神经</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">12</td>
-<td style="text-align:center">舌下神经</td>
-<td style="text-align:center"></td>
-</tr>
-</tbody>
-</table>
-</div><div><h3 data-heading="脑神经节" id="脑神经节" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>脑神经节</h3></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>感觉性神经节
-<ul class="has-list-bullet">
-<li data-line="1"><div class="list-bullet"></div>三叉神经</li>
-</ul>
-</li>
-</ul></div><div><h2 data-heading="特殊内脏运动相关神经" id="特殊内脏运动相关神经" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>特殊内脏运动相关神经</h2></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div>胸锁乳突肌、斜方肌</li>
-<li data-line="1"><div class="list-bullet"></div></li>
-</ul></div><div><h3 data-heading="副神经" id="副神经" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>副神经</h3></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div>连接脑部：延髓</li>
-<li data-line="1"><div class="list-bullet"></div>出颅部位：颈静脉孔</li>
-<li data-line="2"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>分布：由鳃弓演化来的骨骼肌
-<ul class="has-list-bullet">
-<li data-line="3"><div class="list-bullet"></div>胸锁乳突肌</li>
-<li data-line="4"><div class="list-bullet"></div>斜方肌</li>
-<li data-line="5"><div class="list-bullet"></div>咽喉肌</li>
-</ul>
-</li>
-</ul></div><div><h2 data-heading="特殊躯体感觉神经" id="特殊躯体感觉神经" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>特殊躯体感觉神经</h2></div><div><h3 data-heading="视神经" id="视神经" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>视神经</h3></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div>发出：视网膜节细胞</li>
-<li data-line="1"><div class="list-bullet"></div>神经节：视网膜节细胞（视作“视神经节”）</li>
-<li data-line="2"><div class="list-bullet"></div>视交叉：鼻侧交叉 颞侧相同</li>
-<li data-line="3"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>投射：
-<ul class="has-list-bullet">
-<li data-line="4"><div class="list-bullet"></div>下丘脑-视交叉上核：昼夜节律</li>
-<li data-line="5"><div class="list-bullet"></div>中脑-顶盖前区：瞳孔对光反射</li>
-<li data-line="6"><div class="list-bullet"></div>后丘脑-外侧膝状体：视觉</li>
-</ul>
-</li>
-</ul></div><div><h3 data-heading="前庭蜗神经" id="前庭蜗神经" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>前庭蜗神经</h3></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div>发出：前庭蜗器</li>
-<li data-line="1"><div class="list-bullet"></div>神经节：前庭神经节、蜗神经节</li>
-<li data-line="2"><div class="list-bullet"></div>投射：后丘脑-内侧膝状体：听觉</li>
-</ul></div><div><h2 data-heading="动眼相关神经" id="动眼相关神经" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>动眼相关神经</h2></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>一般躯体运动：
-<ul class="has-list-bullet">
-<li data-line="1"><div class="list-bullet"></div>睁眼：上睑提肌（动眼N）—— 上睑下垂</li>
-<li data-line="2"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>转眼球：——复视
-<ul class="has-list-bullet">
-<li data-line="3"><div class="list-bullet"></div>上：上直肌（动眼N）</li>
-<li data-line="4"><div class="list-bullet"></div>下：下直肌（动眼N）</li>
-<li data-line="5"><div class="list-bullet"></div>内：内直肌（动眼N）</li>
-<li data-line="6"><div class="list-bullet"></div>下外：上斜肌（滑车N）——眼外下视障碍</li>
-<li data-line="7"><div class="list-bullet"></div>外：外直肌（展N）—— 内斜视</li>
-</ul>
-</li>
-</ul>
-</li>
-<li data-line="8"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>一般内脏运动
-<ul class="has-list-bullet">
-<li data-line="9"><div class="list-bullet"></div>调节瞳孔：睫状肌和瞳孔括约肌（动眼N）——瞳孔对光反射消失、瞳孔散大</li>
-</ul>
-</li>
-</ul></div><div><div data-callout-metadata="" data-callout-fold="" data-callout="note" class="callout drop-shadow"><div class="callout-title"><div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-pencil"><line x1="18" y1="2" x2="22" y2="6"></line><path d="M7.5 20.5 19 9l-4-4L3.5 16.5 2 22z"></path></svg></div><div class="callout-title-inner">特殊点</div></div><div class="callout-content">
-<ul class="has-list-bullet">
-<li data-line="1"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>动眼神经损伤：
-<ul class="has-list-bullet">
-<li data-line="2"><div class="list-bullet"></div>不能向上、内、下转动</li>
-<li data-line="3"><div class="list-bullet"></div>瞳孔斜向外下方</li>
-</ul>
-</li>
-<li data-line="4"><div class="list-bullet"></div><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>动眼神经有两种纤维成分
-<ul class="has-list-bullet">
-<li data-line="5"><div class="list-bullet"></div>一般内脏运动</li>
-<li data-line="6"><div class="list-bullet"></div>一般躯体运动</li>
-</ul>
-</li>
-<li data-line="7"><div class="list-bullet"></div>展神经连接延髓脑桥沟，其他动眼相关神经均来自中脑</li>
-</ul>
-</div></div></div><div><h2 data-heading="面部感觉相关神经" id="面部感觉相关神经" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>面部感觉相关神经</h2></div><div><h2 data-heading="特殊内脏感觉相关神经" id="特殊内脏感觉相关神经" style="display: flex;"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>特殊内脏感觉相关神经</h2></div><div class="mod-footer"></div></div></div></div><div class="sidebar-right sidebar"><div class="sidebar-content"><span class="sidebar-section-header">Interactive Graph</span><div class="graph-view-placeholder">
-		<div class="graph-view-container">
-			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-arrow-up-right"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
-			<canvas id="graph-canvas" width="512px" height="512px"></canvas>
-		</div>
-		</div></div></div></div></body></html>
+  <!-- Graph View Data -->
+  <script>
+    let nodes = {
+      "nodeCount": 27,
+      "linkCount": 3,
+      "radii": [7, 7, 7, 7, 7, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+      "labels": ["未命名", "感觉通路", "感受器", "脊神经", "脊髓", "目录", "抑郁症", "帕金森病", "神经系统药物治疗", "癫痫", "睡眠障碍", "自主神经系统药物", "5.小脑对躯体运动的调节", "3.大脑皮层对躯体运动的调节", "4.基底核对躯体运动的调节", "2.脑干对肌紧张和姿势的调节", "1.脊髓对运动和姿势的调控", "0.运动与姿势的调控", "脑的电活动", "睡眠与觉醒", "未命名", "脑神经", "内脏神经", "脑干", "间脑", "小脑", "未命名"],
+      "paths": ["5.高级功能/学习记忆/未命名.html", "3.感觉/感觉通路.html", "3.感觉/感受器.html", "2.组成/外周神经/脊神经.html", "2.组成/中枢神经/脊髓.html", "目录.html", "8.疾病/精神疾病/抑郁症.html", "8.疾病/神经退行性疾病/帕金森病.html", "8.疾病/神经系统药物治疗.html", "8.疾病/癫痫.html", "8.疾病/睡眠障碍.html", "6.内脏/自主神经系统药物.html", "4.运动/5.小脑对躯体运动的调节.html", "4.运动/3.大脑皮层对躯体运动的调节.html", "4.运动/4.基底核对躯体运动的调节.html", "4.运动/2.脑干对肌紧张和姿势的调节.html", "4.运动/1.脊髓对运动和姿势的调控.html", "4.运动/0.运动与姿势的调控.html", "5.高级功能/脑的电活动.html", "5.高级功能/睡眠与觉醒.html", "3.感觉/未命名.html", "2.组成/外周神经/脑神经.html", "2.组成/外周神经/内脏神经.html", "2.组成/中枢神经/脑干.html", "2.组成/中枢神经/间脑.html", "2.组成/中枢神经/小脑.html", "1.分子细胞基础/未命名.html"],
+      "linkSources": [2, 1, 0],
+      "linkTargets": [3, 4, 3]
+    };
+    let attractionForce = 1;
+    let linkLength = 10;
+    let repulsionForce = 150;
+    let centralForce = 3;
+    let edgePruning = 100;
+  </script>
+
+  <script type="module" src="lib/scripts/graph_view.js"></script>
+
+  <script src="lib/scripts/graph_wasm.js"></script>
+
+  <script src="lib/scripts/tinycolor.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js" integrity="sha512-Ch/O6kL8BqUwAfCF7Ie5SX1Hin+BJgYH4pNjRqXdTEqMsis1TUYg+j6nnI9uduPjGaj7DN4UKCZgpvoExt6dkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="lib/scripts/webpage.js"></script>
+
+</head>
+
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app is-translucent show-inline-title show-view-header css-settings-manager outliner-plugin-dnd color-scheme-options-default background-settings-workplace-theme-light-blue-mountain background-settings-workplace-theme-dark-in-the-sky background-image-settings-markdown-page-transparent background-image-settings-markdown-page-random-default notebook-liked-markdown-page-dotted-notebook-1 toggle-fixed-pattern panel-page-bg-theme-ligt-curve panel-page-bg-theme-dark-sea hide-left-ribbon-retention-drawer layout-style-options-default default-search-bar default-scrollbar view-button-front bt-default-highlight retain-header-color h1-text-align-center h2-toggle-underline h2-text-align-center h3-text-align-start h4-text-align-start h5-text-align-start h6-text-align-start fancy-hr-icon colorful-unordered-list bt-default-unordered-list default-ol-list-marker list-no-border file-shape-default file-name-wrapped unmuted-collapsed-folder remove-file-icons folder-icons remove-arrow folder-style-change-options-colorful-title folder-colorful-custom blockquote-style-default hr-for-pagination all-dark default-table table-style-default image-zoom image-border default-loading-page loading-text-typing-style rainbow-tag setting-style-traditional default-titlebar default-outline-style nowrap-outline stack-tab-text-ori-mixed default-tab default-canvas-background traditional-callout-style style-options-for-admonition-plugin style-options-for-calendar-plugin-default style-options-for-kanban-plugin-static-default style-options-for-kanban-plugin-dynamic-default style-options-for-buttons-plugin dataview-list-style-pacman default-dvtable dialogue-style-default memos-default-light memos-default-dark quiet-outline-optimize code-theme-bt-default whole-code-wrap codebox-default-style is-maximized" style="--zoom-factor:1; --accent-h:267; --accent-s:100%; --accent-l:65%; --font-text-size:22px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
+  <div class="webpage-container">
+    <div class="sidebar-left sidebar">
+      <div class="sidebar-content">
+        <div><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle">
+            <div class="toggle-background"></div>
+          </label></div>
+        <div class="tree-container file-tree mod-nav-indicator" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">Neurosciences</span><button class="clickable-icon collapse-tree-button is-collapsed"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="1.分子细胞基础"><span class="tree-item-title">1.分子细胞基础</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="1.分子细胞基础/未命名.html"><span class="tree-item-title">未命名</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="2.组成"><span class="tree-item-title">2.组成</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="2.组成/外周神经"><span class="tree-item-title">外周神经</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="2.组成/外周神经/脊神经.html"><span class="tree-item-title">脊神经</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="2.组成/外周神经/脑神经.html"><span class="tree-item-title">脑神经</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="2.组成/外周神经/内脏神经.html"><span class="tree-item-title">内脏神经</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="2.组成/中枢神经"><span class="tree-item-title">中枢神经</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="2.组成/中枢神经/脊髓.html"><span class="tree-item-title">脊髓</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="2.组成/中枢神经/间脑.html"><span class="tree-item-title">间脑</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="2.组成/中枢神经/脑干.html"><span class="tree-item-title">脑干</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="2.组成/中枢神经/小脑.html"><span class="tree-item-title">小脑</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="3.感觉"><span class="tree-item-title">3.感觉</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="3.感觉/感觉通路.html"><span class="tree-item-title">感觉通路</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="3.感觉/感受器.html"><span class="tree-item-title">感受器</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="3.感觉/未命名.html"><span class="tree-item-title">未命名</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="4.运动"><span class="tree-item-title">4.运动</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="4.运动/0.运动与姿势的调控.html"><span class="tree-item-title">0.运动与姿势的调控</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="4.运动/1.脊髓对运动和姿势的调控.html"><span class="tree-item-title">1.脊髓对运动和姿势的调控</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="4.运动/2.脑干对肌紧张和姿势的调节.html"><span class="tree-item-title">2.脑干对肌紧张和姿势的调节</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="4.运动/3.大脑皮层对躯体运动的调节.html"><span class="tree-item-title">3.大脑皮层对躯体运动的调节</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="4.运动/4.基底核对躯体运动的调节.html"><span class="tree-item-title">4.基底核对躯体运动的调节</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="4.运动/5.小脑对躯体运动的调节.html"><span class="tree-item-title">5.小脑对躯体运动的调节</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="5.高级功能"><span class="tree-item-title">5.高级功能</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="5.高级功能/学习记忆"><span class="tree-item-title">学习记忆</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="5.高级功能/学习记忆/未命名.html"><span class="tree-item-title">未命名</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="5.高级功能/脑的电活动.html"><span class="tree-item-title">脑的电活动</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="5.高级功能/睡眠与觉醒.html"><span class="tree-item-title">睡眠与觉醒</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="6.内脏"><span class="tree-item-title">6.内脏</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="6.内脏/自主神经系统药物.html"><span class="tree-item-title">自主神经系统药物</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="8.疾病"><span class="tree-item-title">8.疾病</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="8.疾病/精神疾病"><span class="tree-item-title">精神疾病</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="8.疾病/精神疾病/抑郁症.html"><span class="tree-item-title">抑郁症</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="8.疾病/神经退行性疾病"><span class="tree-item-title">神经退行性疾病</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="8.疾病/神经退行性疾病/帕金森病.html"><span class="tree-item-title">帕金森病</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="8.疾病/癫痫.html"><span class="tree-item-title">癫痫</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="8.疾病/神经系统药物治疗.html"><span class="tree-item-title">神经系统药物治疗</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="8.疾病/睡眠障碍.html"><span class="tree-item-title">睡眠障碍</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-file" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="目录.html"><span class="tree-item-title">目录</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="document-container">
+      <div class="markdown-preview-view markdown-rendered node-insert-event allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
+        <style id="MJX-CHTML-styles"></style>
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: ; padding-top: var(--file-margins); padding-right: var(--file-margins); padding-left: var(--file-margins); width: 100%; position: absolute;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header"></div>
+          <div>
+            <h2 data-heading="脑神经" id="脑神经" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>脑神经
+            </h2>
+          </div>
+          <div>
+            <h3 data-heading="位置走行" id="位置走行" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>位置走行
+            </h3>
+          </div>
+          <div style="overflow-x: auto;">
+            <table>
+              <thead>
+                <tr>
+                  <th style="text-align:center"></th>
+                  <th style="text-align:center">脑神经</th>
+                  <th style="text-align:center">与脑的联系</th>
+                  <th style="text-align:center">出/入颅部位</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="text-align:center">1</td>
+                  <td style="text-align:center">嗅神经</td>
+                  <td style="text-align:center">端脑 嗅球</td>
+                  <td style="text-align:center">筛板</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">2</td>
+                  <td style="text-align:center">视神经</td>
+                  <td style="text-align:center">间脑 视交叉</td>
+                  <td style="text-align:center">视神经管</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">3</td>
+                  <td style="text-align:center">动眼神经</td>
+                  <td style="text-align:center">中脑 脑脚窝</td>
+                  <td style="text-align:center">眶上裂</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">4</td>
+                  <td style="text-align:center">滑车神经</td>
+                  <td style="text-align:center">下丘下方</td>
+                  <td style="text-align:center">眶上裂</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">5</td>
+                  <td style="text-align:center">三叉神经</td>
+                  <td style="text-align:center">脑桥 基底部</td>
+                  <td style="text-align:center">圆孔、卵圆孔、眶上裂</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">6</td>
+                  <td style="text-align:center">展神经</td>
+                  <td style="text-align:center" rowspan="3">脑桥 延髓脑桥沟</td>
+                  <td style="text-align:center">眶上裂</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">7</td>
+                  <td style="text-align:center">面神经</td>
+                  <td style="text-align:center">内耳门、茎乳孔</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">8</td>
+                  <td style="text-align:center">前庭蜗神经</td>
+                  <td style="text-align:center">内耳门</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">9</td>
+                  <td style="text-align:center">舌咽神经</td>
+                  <td style="text-align:center" rowspan="3">延髓 橄榄后沟</td>
+                  <td style="text-align:center" rowspan="3">颈静脉孔</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">10</td>
+                  <td style="text-align:center">迷走神经</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">11</td>
+                  <td style="text-align:center">副神经</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">12</td>
+                  <td style="text-align:center">舌下神经</td>
+                  <td style="text-align:center">延髓 橄榄前方</td>
+                  <td style="text-align:center">舌下神经管</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h3 data-heading="纤维成分" id="纤维成分" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>纤维成分
+            </h3>
+          </div>
+          <div>
+            <h4 data-heading="纤维成分类型" id="纤维成分类型" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>纤维成分类型
+            </h4>
+          </div>
+          <div style="overflow-x: auto;">
+            <table>
+              <thead>
+                <tr>
+                  <th style="text-align:center">纤维成分</th>
+                  <th style="text-align:center">效应器</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="text-align:center">一般躯体运动</td>
+                  <td style="text-align:center">骨骼肌（舌肌、眼球外肌）</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">一般内脏运动</td>
+                  <td style="text-align:center">平滑肌、心肌、纤体</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">特殊内脏运动</td>
+                  <td style="text-align:center">表情肌、咀嚼肌、咽喉肌、胸锁乳突肌和斜方肌</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">一般躯体感觉</td>
+                  <td style="text-align:center">皮肤、肌、肌腱、口鼻部粘膜</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">特殊躯体感觉</td>
+                  <td style="text-align:center">视器、位听器</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">一般内脏感觉</td>
+                  <td style="text-align:center">内脏、心血管</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">特殊内脏感觉</td>
+                  <td style="text-align:center">味蕾、嗅器</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h4 data-heading="脑神经的纤维成分" id="脑神经的纤维成分" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>脑神经的纤维成分
+            </h4>
+          </div>
+          <div style="overflow-x: auto;">
+            <table>
+              <thead>
+                <tr>
+                  <th style="text-align:center"></th>
+                  <th style="text-align:center">脑神经</th>
+                  <th style="text-align:center">纤维成分</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="text-align:center">1</td>
+                  <td style="text-align:center">嗅神经</td>
+                  <td style="text-align:center">特殊内脏感觉</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">2</td>
+                  <td style="text-align:center">视神经</td>
+                  <td style="text-align:center">特殊躯体感觉</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">3</td>
+                  <td style="text-align:center">动眼神经</td>
+                  <td style="text-align:center">一般躯体运动、一般内脏运动</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">4</td>
+                  <td style="text-align:center">滑车神经</td>
+                  <td style="text-align:center">一般躯体运动</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">5</td>
+                  <td style="text-align:center">三叉神经</td>
+                  <td style="text-align:center"></td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">6</td>
+                  <td style="text-align:center">展神经</td>
+                  <td style="text-align:center"></td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">7</td>
+                  <td style="text-align:center">面神经</td>
+                  <td style="text-align:center"></td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">8</td>
+                  <td style="text-align:center">前庭蜗神经</td>
+                  <td style="text-align:center"></td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">9</td>
+                  <td style="text-align:center">舌咽神经</td>
+                  <td style="text-align:center"></td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">10</td>
+                  <td style="text-align:center">迷走神经</td>
+                  <td style="text-align:center"></td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">11</td>
+                  <td style="text-align:center">副神经</td>
+                  <td style="text-align:center"></td>
+                </tr>
+                <tr>
+                  <td style="text-align:center">12</td>
+                  <td style="text-align:center">舌下神经</td>
+                  <td style="text-align:center"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h3 data-heading="脑神经节" id="脑神经节" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>脑神经节
+            </h3>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>感觉性神经节
+                <ul class="has-list-bullet">
+                  <li data-line="1">
+                    <div class="list-bullet"></div>三叉神经
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="特殊内脏运动相关神经" id="特殊内脏运动相关神经" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>特殊内脏运动相关神经
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>胸锁乳突肌、斜方肌
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-heading="副神经" id="副神经" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>副神经
+            </h3>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>连接脑部：延髓
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>出颅部位：颈静脉孔
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>分布：由鳃弓演化来的骨骼肌
+                <ul class="has-list-bullet">
+                  <li data-line="3">
+                    <div class="list-bullet"></div>胸锁乳突肌
+                  </li>
+                  <li data-line="4">
+                    <div class="list-bullet"></div>斜方肌
+                  </li>
+                  <li data-line="5">
+                    <div class="list-bullet"></div>咽喉肌
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="特殊躯体感觉神经" id="特殊躯体感觉神经" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>特殊躯体感觉神经
+            </h2>
+          </div>
+          <div>
+            <h3 data-heading="视神经" id="视神经" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>视神经
+            </h3>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>发出：视网膜节细胞
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>神经节：视网膜节细胞（视作“视神经节”）
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>视交叉：鼻侧交叉 颞侧相同
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>投射：
+                <ul class="has-list-bullet">
+                  <li data-line="4">
+                    <div class="list-bullet"></div>下丘脑-视交叉上核：昼夜节律
+                  </li>
+                  <li data-line="5">
+                    <div class="list-bullet"></div>中脑-顶盖前区：瞳孔对光反射
+                  </li>
+                  <li data-line="6">
+                    <div class="list-bullet"></div>后丘脑-外侧膝状体：视觉
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-heading="前庭蜗神经" id="前庭蜗神经" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>前庭蜗神经
+            </h3>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>发出：前庭蜗器
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>神经节：前庭神经节、蜗神经节
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>投射：后丘脑-内侧膝状体：听觉
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="动眼相关神经" id="动眼相关神经" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>动眼相关神经
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>一般躯体运动：
+                <ul class="has-list-bullet">
+                  <li data-line="1">
+                    <div class="list-bullet"></div>睁眼：上睑提肌（动眼N）—— 上睑下垂
+                  </li>
+                  <li data-line="2">
+                    <div class="list-bullet"></div>
+                    <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div>转眼球：——复视
+                    <ul class="has-list-bullet">
+                      <li data-line="3">
+                        <div class="list-bullet"></div>上：上直肌（动眼N）
+                      </li>
+                      <li data-line="4">
+                        <div class="list-bullet"></div>下：下直肌（动眼N）
+                      </li>
+                      <li data-line="5">
+                        <div class="list-bullet"></div>内：内直肌（动眼N）
+                      </li>
+                      <li data-line="6">
+                        <div class="list-bullet"></div>下外：上斜肌（滑车N）——眼外下视障碍
+                      </li>
+                      <li data-line="7">
+                        <div class="list-bullet"></div>外：外直肌（展N）—— 内斜视
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li data-line="8">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>一般内脏运动
+                <ul class="has-list-bullet">
+                  <li data-line="9">
+                    <div class="list-bullet"></div>调节瞳孔：睫状肌和瞳孔括约肌（动眼N）——瞳孔对光反射消失、瞳孔散大
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div data-callout-metadata="" data-callout-fold="" data-callout="note" class="callout drop-shadow">
+              <div class="callout-title">
+                <div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-pencil">
+                    <line x1="18" y1="2" x2="22" y2="6"></line>
+                    <path d="M7.5 20.5 19 9l-4-4L3.5 16.5 2 22z"></path>
+                  </svg></div>
+                <div class="callout-title-inner">特殊点</div>
+              </div>
+              <div class="callout-content">
+                <ul class="has-list-bullet">
+                  <li data-line="1">
+                    <div class="list-bullet"></div>
+                    <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div>动眼神经损伤：
+                    <ul class="has-list-bullet">
+                      <li data-line="2">
+                        <div class="list-bullet"></div>不能向上、内、下转动
+                      </li>
+                      <li data-line="3">
+                        <div class="list-bullet"></div>瞳孔斜向外下方
+                      </li>
+                    </ul>
+                  </li>
+                  <li data-line="4">
+                    <div class="list-bullet"></div>
+                    <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div>动眼神经有两种纤维成分
+                    <ul class="has-list-bullet">
+                      <li data-line="5">
+                        <div class="list-bullet"></div>一般内脏运动
+                      </li>
+                      <li data-line="6">
+                        <div class="list-bullet"></div>一般躯体运动
+                      </li>
+                    </ul>
+                  </li>
+                  <li data-line="7">
+                    <div class="list-bullet"></div>展神经连接延髓脑桥沟，其他动眼相关神经均来自中脑
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 data-heading="面部感觉相关神经" id="面部感觉相关神经" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>面部感觉相关神经
+            </h2>
+          </div>
+          <div>
+            <h2 data-heading="特殊内脏感觉相关神经" id="特殊内脏感觉相关神经" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>特殊内脏感觉相关神经
+            </h2>
+          </div>
+          <div class="mod-footer"></div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-right sidebar">
+      <div class="sidebar-content"><span class="sidebar-section-header">Interactive Graph</span>
+        <div class="graph-view-placeholder">
+          <div class="graph-view-container">
+            <div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-arrow-up-right">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg></div>
+            <canvas id="graph-canvas" width="512px" height="512px"></canvas>
+          </div>
+        </div>
+        <div class="tree-container outline-tree" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-heading mod-collapsible" data-depth="2">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="#脑神经"><span class="tree-item-title">脑神经</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading" data-depth="3">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#位置走行"><span class="tree-item-title">位置走行</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading mod-collapsible" data-depth="3">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="#纤维成分"><span class="tree-item-title">纤维成分</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-heading" data-depth="4">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#纤维成分类型"><span class="tree-item-title">纤维成分类型</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="4">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#脑神经的纤维成分"><span class="tree-item-title">脑神经的纤维成分</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="3">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#脑神经节"><span class="tree-item-title">脑神经节</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-heading mod-collapsible" data-depth="2">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="#特殊内脏运动相关神经"><span class="tree-item-title">特殊内脏运动相关神经</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading" data-depth="3">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#副神经"><span class="tree-item-title">副神经</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-heading mod-collapsible" data-depth="2">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="#特殊躯体感觉神经"><span class="tree-item-title">特殊躯体感觉神经</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading" data-depth="3">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#视神经"><span class="tree-item-title">视神经</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="3">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#前庭蜗神经"><span class="tree-item-title">前庭蜗神经</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="2">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#动眼相关神经"><span class="tree-item-title">动眼相关神经</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="2">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#面部感觉相关神经"><span class="tree-item-title">面部感觉相关神经</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="2">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#特殊内脏感觉相关神经"><span class="tree-item-title">特殊内脏感觉相关神经</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
